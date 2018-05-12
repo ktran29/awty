@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             if (button.text == "Start") {
-//                Log.i(TAG, "${nagInterval.toString().toLong()}")
                 if (messageText.isNotEmpty() && phoneNumber.length == 10 && (nagInterval.isNotEmpty() && nagInterval.toString() != "0")) {
                     Log.i(TAG, "Alarm Started")
                     button.text = "Stop"
